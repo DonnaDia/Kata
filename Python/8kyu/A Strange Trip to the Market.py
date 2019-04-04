@@ -1,8 +1,15 @@
-#Vers 1
-def is_lock_ness_monster(string):
-    return any(x for x in ['tree fiddy', 'three fifty', '3.50'] if x in string)
+#Vers1
+def say_hello(name, city, state):
+	return f"Hello, {','.join(name).replace(',', ' ')}! Welcome to {city}, {state}!"
 
 
-#Vers 2
-def is_lock_ness_monster(string):
-    return True if 'tree fiddy' in string or '3.50' in string or 'three fifty' in string else False
+#Vers2
+def say_hello(name, city, state):
+	name = ','.join(name).replace(',', ' ')
+	return f"Hello, {name}! Welcome to {city}, {state}!"
+
+
+#Vers3
+def say_hello(name, city, state):
+    name = " ".join(name)
+    return ("Hello, " + name + "! Welcome to " + city + ", " + state + "!") 
