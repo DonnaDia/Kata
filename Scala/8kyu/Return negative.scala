@@ -1,5 +1,6 @@
 object Negative {
 
   def makeNegative(n: Int): Int = {
-   if (n < 0) n else n * -1}
+   if (n < 0) n else n * -1
+  }
 }
